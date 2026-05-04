@@ -1,0 +1,89 @@
+name: agridirectplus
+description: A Smart Agriculture Marketplace with Integrated Crop Health Support
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  path: ^1.9.0
+
+  # ---------- Supabase (Backend, Auth, Realtime, Storage) ----------
+  supabase_flutter: ^2.3.4
+
+  # ---------- Map & Location ----------
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.0
+  geolocator: ^11.0.0
+
+  # ---------- Image ----------
+  image_picker: ^1.1.2
+  cached_network_image: ^3.3.1
+
+  # ---------- HTTP / API Calls ----------
+  http: ^1.2.1
+
+  # ---------- Notifications ----------
+  #flutter_local_notifications: ^17.1.2
+
+  # ---------- Charts (Admin Dashboard) ----------
+  fl_chart: ^0.67.0
+
+  # ---------- State Management ----------
+  provider: ^6.1.2
+
+  # ---------- Utilities ----------
+  intl: ^0.19.0
+  shared_preferences: ^2.2.3
+  connectivity_plus: ^6.0.3
+  permission_handler: ^11.3.1
+  uuid: ^4.4.0
+  url_launcher: ^6.2.7
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  # আইকন এবং স্প্ল্যাশ স্ক্রিন জেনারেটর
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+# নেটিভ স্প্ল্যাশ স্ক্রিন কনফিগারেশন
+flutter_native_splash:
+  color: "#E8F5E9" # আপনার ডিজাইন অনুযায়ী হালকা সবুজ
+  image: "assets/images/Agridirect+ icon.png"
+  android_12:
+    image: "assets/images/Agridirect+ icon.png"
+    color: "#E8F5E9"
+
+# অ্যাপ আইকন কনফিগারেশন
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/Agridirect+ icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/onboarding/
+    - assets/fonts/
+
+  fonts:
+    - family: AppFont
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
